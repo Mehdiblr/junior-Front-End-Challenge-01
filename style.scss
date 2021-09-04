@@ -1,0 +1,68 @@
+/* Variables */
+$gray: #eee;
+$whiteColor: #fff;
+$headerColor:#2196f3;
+$lightBlue:lightblue;
+$black:#000;
+/* Mixin */
+
+
+
+/* Custom Style */
+body{
+    background-color:$gray;
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 5rem;
+    }
+}
+header#header{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 500px;
+    color: white;
+    nav#nav-menu{
+        background-color:$headerColor;
+        color:$whiteColor;
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .account-icon{
+        font-size: 1.3rem;
+    }
+    .slider{
+        min-height: 280px;
+        background-color: $lightBlue;
+        background-image: url(assets/img/hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        h4{
+            padding: 5px;
+            padding: 12px;
+            font-size: 2rem;
+        }
+        span{
+            background-color: $whiteColor;
+            color: $black;
+            border-radius: 10px 100px / 120px;
+            padding: 1rem 4rem;
+            margin-left: 50px;
+            font-size: 1.5rem;
+        }
+    }
+}
