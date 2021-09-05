@@ -166,4 +166,8 @@ section#main ul li span {
   padding: 0.3rem;
   background-color: #0000005e;
 }
+
+section#main .popular-post img {
+  width: 500px;
+}
 /*# sourceMappingURL=style.css.map */
