@@ -5,7 +5,9 @@ $headerColor:#2196f3;
 $lightBlue:lightblue;
 $black:#000;
 /* Mixin */
-
+@mixin Width {
+    width: 620px;
+}
 
 
 /* Custom Style */
@@ -25,7 +27,7 @@ header#header{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    width: 500px;
+    @include Width();
     color: white;
     nav#nav-menu{
         background-color:$headerColor;
@@ -63,6 +65,48 @@ header#header{
             padding: 1rem 4rem;
             margin-left: 50px;
             font-size: 1.5rem;
+        }
+    }
+}
+section#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteColor;
+    @include Width();
+    h3{
+        padding: 8px;
+        font-size: 1.5rem
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        li{
+            margin: 1rem;
+            position: relative;
+            img{
+                width: 180px;
+                height: 140px;
+                
+                
+            }
+            span{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                font-size: 1.4rem;
+                padding: 0.3rem;
+                background-color: #0000005e;
+            }
         }
     }
 }
