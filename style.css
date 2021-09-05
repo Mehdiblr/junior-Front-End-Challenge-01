@@ -164,10 +164,48 @@ section#main ul li span {
   color: white;
   font-size: 1.4rem;
   padding: 0.3rem;
-  background-color: #0000005e;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0000009e), color-stop(#0000009e), color-stop(#0000009e), color-stop(#0000009e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0000009e, #0000009e, #0000009e, #0000009e, #ffffff00);
+}
+
+section#main .popular-post {
+  margin: 1rem 0.1rem;
+  position: relative;
 }
 
 section#main .popular-post img {
   width: 500px;
+}
+
+section#main .popular-post .post-detile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 2rem 1rem 2rem 1rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0000009e), color-stop(#0000009e), color-stop(#0000009e), color-stop(#0000009e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0000009e, #0000009e, #0000009e, #0000009e, #ffffff00);
+}
+
+section#main .popular-post .post-detile header {
+  font-weight: bold;
+  font-size: 2.7rem;
+  font-family: Roboto;
+}
+
+section#main .popular-post .post-detile p {
+  font-size: 1.4rem;
+}
+
+section#main .popular-post .post-detile span {
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */
