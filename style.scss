@@ -27,6 +27,7 @@ body{
         padding: 2rem 5rem;
     }
 }
+// Header Css
 header#header{
     
     display: flex;
@@ -73,6 +74,7 @@ header#header{
         }
     }
 }
+//Main Section
 section#main{
     display: flex;
     flex-direction: column;
@@ -154,6 +156,7 @@ section#main{
     }
 
 }
+//More Explore Section
 section#more-explore{
     @include Width();
     @include bg_moreExplore();
@@ -210,6 +213,7 @@ section#more-explore{
             }
         }
     }
+// Footer Section
 footer{
     display: flex;
     flex-direction: column;
