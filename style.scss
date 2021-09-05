@@ -11,6 +11,9 @@ $black:#000;
 @mixin bg_blackToTransparent{
     background-image: linear-gradient(to top, #0000009e, #0000009e, #0000009e, #0000009e, #ffffff00);
 }
+@mixin bg_moreExplore{
+    background-image: linear-gradient(to left top, #d7e7ff, #b7f2ff, #a0fdfa, #b1ffd3, #e4ffa7);
+}
 
 /* Custom Style */
 body{
@@ -115,7 +118,7 @@ section#main{
         margin: 1rem 0.1rem;
         position: relative;
         img{
-            width: 500px;
+            width: 580px;
         }
         .post-detile{
             position: absolute;
@@ -148,5 +151,99 @@ section#main{
 
         }
 
+    }
+
+}
+section#more-explore{
+    @include Width();
+    @include bg_moreExplore();
+    color:$black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    h3{
+        font-family: Rosario;
+        font-weight: bold;
+        padding: 8px;
+        font-size: 1.5rem
+    }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            li{
+                margin: 0.6rem;
+                position: relative;
+                background-color: $whiteColor;
+                width: 194px;
+                img{
+                    width: 100%;
+                    height: 140px;
+                }
+                header{
+                    text-align: center;
+                    padding: 1rem;
+                    font-weight: bold;
+                }
+                p{
+                    text-align: center;
+                    padding: 0.2rem 1rem 1rem 1rem;
+                    font-weight: bold;
+                }
+                span{
+                    color: black;
+                    position: absolute;
+                    right: 0;
+                    padding: 2px;
+                    background-color: white;
+                    border-radius: 50px;
+                    margin: 4px;
+                    width: 14px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    padding:1rem;
+    background-color: $whiteColor;
+    @include Width();
+    hr{
+        margin-top: 15px;
+    }
+    .footer-menu{
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            li{
+                list-style: none;
+                padding: 1rem 0.4rem;
+                i{
+                    padding-right: 1px;
+                }
+            }
+        }
+        .footer-contact-us{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: stretch;
+            align-content: center;
+        }
     }
 }
